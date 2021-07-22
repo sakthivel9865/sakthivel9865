@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .container>div{
+        width: 200px;
+        height: 30px;
+        border: 1px solid green;
+        text-align: center;
+    }
+    .container2>div{
+        max-width: 90vw;
+        margin: auto;
+        height: 500px;
+        border: 1px solid red;
+        text-align: center;
+    }
+    /* .one:hover.container2>.c1{
+        background-color: yellow;
+    } */
+
+
+    /* .container:hover ~ .container2>.c1{
+        background-color: rgb(236, 236, 193);
+        border: 1px solid blue;
+    } */
+
+
+    /* .container>.one:hover{
+        background-color: yellow;
+    } */
+    /* .one:hover + .container2>.c1{
+        background-color: yellow;
+    } */
+    /* .one:hover, .c1:hover{
+        background-color: yellow;
+    } */
+   /* .container>:nth-child(3) + .container2>.c1{
+       background-color: yellow;
+   } */
+   /* .container2:first-child{
+       background-color: yellow;
+   } */
+
+
+
+
+
+
+
+   /* .container > div:nth-child(1) ~ .container2 >div:nth-child(1):hover{
+       background-color: rgb(197, 236, 197);
+   }
+   .container>div:nth-child(2):hover {
+       background-color: green;
+   }
+   .container>div:nth-child(3):hover {
+       background-color: green;
+   }
+   .container>div:nth-child(4):hover {
+       background-color: green;
+   } */
+
+
+
+
+
+    /*. .one:hover ~.container2:nth-child(1){
+        background-color: yellow;
+
+        + .container2>div:nth-child(1)
+
+
+    } */
+    /* .container:nth-child(1):hover ~ .container2:nth-child(1){
+        background-color: rgb(199, 199, 136);
+        border: 1px solid blue;
+    } */
+    /* .container>.one:hover + .container2>.c1{
+        background-color: yellow;
+    } */
+     /* .container:nth-child(2):hover ~ .container2>.c2{
+        background-color: yellow;
+    }
+    .container:nth-child(3):hover ~ .container2>.c3{
+        background-color: yellow;
+    }
+    .container:nth-child(4):hover ~ .container2>.c4{
+        background-color: yellow; 
+    } */
+    /* #n1:hover ~ :not(.tab2){
+        background-color: teal;
+    } */
+    /* .container>.one.c1:hover{
+        background-color: yellow;
+    } */
+    /* .one :hover, .container2:nth-child(1){
+        background-color: tomato;
+    } */
+    /* .one:hover{
+        background-color: green;
+    } */
+    /* .n1:hover + .c1{
+        background-color: yellow;
+    } */
+    /* .n1:hover{
+        background-color: yellow;
+    } */
+    /* #n:hover{
+        background-color: yellow;
+    } */
+    /* .c1:hover{
+      background-color: yellow;
+    } */
+    /* .overall>.container>:nth-child(1):hover{
+        background-color: rgb(208, 214, 208);
+    }
+    .overall>.container2>:nth-child(1):hover{
+        background-color:rgb(208, 214, 208);
+    }
+    .container>#new:hover + .container2>div:nth-child(1){
+        background-color: black;
+    } */
+    /* .container>a{
+        border: 1px solid tan;
+    } */
+    /* :not() */
+    /* a{
+        width: 200px;
+        height: 30px;
+    } */
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container>div{
+        display: flex;
+        width: 90%;
+        height: 350px;
+        margin: auto;
+    }
+    /* .container>div{
+        display: none;
+    }
+    .container>div:target{
+        display: block;
+    } */
+    /* .container>div:target{
+        display: inline-block;
+    } */
+    /* .container>a:nth-child(1):hover ~ .container>div #tab1{
+        border: 1px solid black;
+        background-color: yellow;
+    } */
+    /* .container>.one + div>#tab1:hover{
+        background-color: yellow;
+    } */
+
+    .container>.width{
+        border: 1px solid #e5e5e5;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 0px 0px 0px;
+    }
+    /* .container>a .one:hover + #tab1{
+        background-color: yellow;
+    } */
+    
+    /* a> .one + div>.ed1:hover{
+        background-color: yellow;
+    }
+    a:nth-child(2):hover{
+        background-color: green;
+    }
+    a:nth-child(3):hover{
+        background-color: red;
+    }
+    a:nth-child(4):hover{
+        background-color: black;
+    } */
+    /* .container> a:nth-child(1):hover {
+        background-color: yellow;
+    } */
+    /* #tab1:hover{
+        background-color: teal;
+    }
+    #tab2:hover{
+        background-color: teal;
+    }
+    #tab3:hover{
+        background-color: teal;
+    }
+    #tab4:hover{
+        background-color: teal;
+    } */
+
+    /* a:first-child + div:hover{
+        background-color: yellow;
+    } */
+    /* a:nth-child(1):hover ~ div>:nth-child(){
+       background-color: yellow;
+    } */
+    /* a:nth-child(1):hover{
+        background-color: green;
+    } */
+    a:nth-child(1):hover ~ .ed{
+        background-color: teal;
+    }
+    a:nth-child(2):hover ~ .ed1{
+        background-color: green;
+    }
+    a:nth-child(3):hover ~ .ed2{
+        background-color: green;
+    }
+    a:nth-child(4):hover ~ .ed3{
+        background-color: green;
+    }
+</style>
+<body>
+   
+
+<div class="container">
+    <a class="one width" href="#tab1">tab-1</a>
+    <a class="two width" href="#tab2">tab-2</a>
+    <a class="three width" href="#tab3">tab-3</a>
+    <a class="four width" href="#tab4">tab-4</a>
+
+    <div class="ed" id="tab1">c1</div>   
+    <div class="ed1" id="tab2">c2</div>
+    <div class="ed2" id="tab3">c3</div>
+    <div class="ed3" id="tab4">c4</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="overall">
+    <div class="container">
+        <a href="#tab1">tab-1</a >
+        <a href="#tab2">tab-2</a >
+        <a href="#tab3">tab-3</a >
+        <a href="#tab4">tab-4</a >
+     -->
+    <!-- </div>
+
+
+
+
+    <div class="container2"> -->
+        <!-- <div class="tab1">c1</div>
+        <div class="tab2">c2</div>
+        <div class="tab3">c3</div>
+        <div class="tab4">c4</div>
+    </div>
+</div> -->
