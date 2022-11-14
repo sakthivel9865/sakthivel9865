@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; 
+}
+.bg-container {
+    background-image:url("https://itom-security.csez.zohocorpin.com/img/bg-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right,#0f1612 , #1a2a21); */
+    /* opacity: 1; */
+    position: relative;   
+}
+.login-box {
+    animation: login 0.7s;
+    border: 0.2px solid black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35%;
+    width: 40%;
+    /* max-height: 350px; */
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 3px 5px 25px black;
+}
+@keyframes login{
+    from{top:0px;}
+    to{top:230px;}
+}
+.login-heading {
+    font-size: 20px;
+    color: #848484;
+}
+.user-data {
+    padding: 5px;
+    height: 17%;
+    width: 85%;
+    font-size: 15px;
+    margin: 8px;
+    border-radius: 6px;
+    text-align: center;
+    border: 2.5px solid #f6f6f6;
+    background-color:  #f6f6f6;
+    outline: 1px solid transparent;
+    color: #848484;
+}
+.user-data:focus{
+    outline-color: #f6f6f6;
+    background-color: white;
+    border-bottom: 2.5px solid #46bb7d;
+}
+.login-btn {
+    height: 17%;
+    width: 45%;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    background-color: #46bb7d;
+    border: none;
+    color: white;
+    box-shadow: 3px 5px 20px #46bb7d;
+}
+.login-btn:hover{
+    background-color: rgb(139 224 133);
+}
+.demo{
+    background-color: RGBA(12, 11, 11, 0.82);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width:426px) {
+    .login-box{
+        height: 130px;
+        padding: 10px;
+    }
+    .user-data{
+        font-size: 10px;
+    }
+    .login-heading{
+        font-size: small;
+    }
+    .login-btn{
+        font-size: 10px;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .bg-container{
+        /* width: 100%; */
+    }
+}
