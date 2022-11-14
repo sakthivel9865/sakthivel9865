@@ -11,9 +11,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: linear-gradient(to right,#0f1612 , #1a2a21); */
-    /* opacity: 1; */
     position: relative;   
+}
+.bg-black{
+    background-color: RGBA(12, 11, 11, 0.82);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
 }
 .login-box {
     animation: login 0.7s;
@@ -22,9 +29,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35%;
     width: 40%;
-    /* max-height: 350px; */
+    height: 300px;
     max-width: 400px;
     border-radius: 10px;
     background-color: #fff;
@@ -36,33 +42,33 @@ body{
     to{top:230px;}
 }
 .login-heading {
+    padding: 10px;
     font-size: 20px;
     color: #848484;
 }
 .user-data {
-    padding: 5px;
-    height: 17%;
+    padding: 22px;
     width: 85%;
-    font-size: 15px;
-    margin: 8px;
-    border-radius: 6px;
+    font-size: 14px;
+    margin: 7px;
+    border-radius: 4px;
     text-align: center;
-    border: 2.5px solid #f6f6f6;
-    background-color:  #f6f6f6;
-    outline: 1px solid transparent;
+    border: 2px solid transparent;
+    background-color: #fdf3f39f;
+    border-bottom: 2px solid transparent;
     color: #848484;
 }
 .user-data:focus{
-    outline-color: #f6f6f6;
     background-color: white;
-    border-bottom: 2.5px solid #46bb7d;
+    border: 2px solid #fdf3f39f;
+    outline: none;
+    border-bottom: 2px solid #46bb7d;
 }
 .login-btn {
     height: 17%;
     width: 45%;
     font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin: auto;
     border-radius: 6px;
     background-color: #46bb7d;
     border: none;
@@ -72,35 +78,23 @@ body{
 .login-btn:hover{
     background-color: rgb(139 224 133);
 }
-.demo{
-    background-color: RGBA(12, 11, 11, 0.82);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.9;
-}
 
 @media only screen and (max-width:426px) {
     .login-box{
-        height: 130px;
-        padding: 10px;
+        height: auto;
+        width: auto;
     }
     .user-data{
         font-size: 10px;
+        padding: 10px;
     }
     .login-heading{
         font-size: small;
+        padding: 0;
     }
     .login-btn{
-        font-size: 10px;
+        font-size: 7px;
+        padding: 10px;
         border-radius: 3px;
-    }
-}
-
-@media only screen and (min-width:1024px) {
-    .bg-container{
-        /* width: 100%; */
     }
 }
